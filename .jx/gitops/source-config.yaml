@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: Jx
     - name: Jx_Pipeline
     - name: Jx_Pipeline2
     - name: Jx_Test

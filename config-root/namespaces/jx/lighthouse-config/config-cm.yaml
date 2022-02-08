@@ -7,6 +7,10 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        btukov/Jenkinsx_Demo: true
+        btukov/Jx: true
+        btukov/Jx_Pipeline: true
+        btukov/Jx_Pipeline2: true
         btukov/Jx_Test: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +23,10 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        btukov/Jenkinsx_Demo: merge
+        btukov/Jx: merge
+        btukov/Jx_Pipeline: merge
+        btukov/Jx_Pipeline2: merge
         btukov/Jx_Test: merge
       queries:
       - labels:
@@ -31,6 +39,10 @@ data:
         - needs-rebase
         repos:
         - btukov/Jx_Test
+        - btukov/Jenkinsx_Demo
+        - btukov/Jx_Pipeline
+        - btukov/Jx_Pipeline2
+        - btukov/Jx
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +53,10 @@ data:
         - needs-rebase
         repos:
         - btukov/Jx_Test
+        - btukov/Jenkinsx_Demo
+        - btukov/Jx_Pipeline
+        - btukov/Jx_Pipeline2
+        - btukov/Jx
       target_url: http://lighthouse-jx.192.168.90.82.nip.io/merge/status
 kind: ConfigMap
 metadata:

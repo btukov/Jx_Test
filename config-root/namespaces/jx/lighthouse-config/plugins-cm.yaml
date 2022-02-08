@@ -6,6 +6,26 @@ data:
       repos:
       - btukov/Jx_Test
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - btukov/Jenkinsx_Demo
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - btukov/Jx_Pipeline
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - btukov/Jx_Pipeline2
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - btukov/Jx_Test
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - btukov/Jx
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +36,26 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      btukov/Jenkinsx_Demo:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      btukov/Jx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      btukov/Jx_Pipeline:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      btukov/Jx_Pipeline2:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       btukov/Jx_Test:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +66,71 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      btukov/Jenkinsx_Demo:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      btukov/Jx:
+      - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      btukov/Jx_Pipeline:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      btukov/Jx_Pipeline2:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       btukov/Jx_Test:
       - config-updater
       - approve
@@ -55,6 +160,23 @@ data:
     - repos:
       - btukov/Jx_Test
       trusted_org: todo
+    - repos:
+      - btukov/Jenkinsx_Demo
+      trusted_org: todo
+    - repos:
+      - btukov/Jx_Pipeline
+      trusted_org: todo
+    - repos:
+      - btukov/Jx_Pipeline2
+      trusted_org: todo
+    - repos:
+      - btukov/Jx_Test
+      trusted_org: todo
+    - repos:
+      - btukov/Jx
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

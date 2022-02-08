@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: btukov
+    provider: github
+    repository: jenkinsx-demo
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: btukov-jenkinsx-demo
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/btukov/Jenkinsx_Demo.git
+  org: btukov
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: Jenkinsx_Demo
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/btukov/Jenkinsx_Demo

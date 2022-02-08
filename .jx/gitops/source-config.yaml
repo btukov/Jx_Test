@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: Jx_Pipeline
     - name: Jx_Test
     scheduler: in-repo
   slack:

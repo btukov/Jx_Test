@@ -14,6 +14,14 @@ spec:
     - name: Jx_Pipeline2
     - name: Jx_Test
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: btukov
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: Maven_JX
+    server: jenkin-maven
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess

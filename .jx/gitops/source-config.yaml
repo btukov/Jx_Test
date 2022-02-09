@@ -14,6 +14,7 @@ spec:
     - name: Jx_Pipeline2
     - name: Jx_Test
     - name: Jx_Tukov
+    - name: Lobe
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'

@@ -12,6 +12,7 @@ data:
         btukov/Jx_Pipeline: true
         btukov/Jx_Pipeline2: true
         btukov/Jx_Test: true
+        btukov/Jx_Tukov: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -28,6 +29,7 @@ data:
         btukov/Jx_Pipeline: merge
         btukov/Jx_Pipeline2: merge
         btukov/Jx_Test: merge
+        btukov/Jx_Tukov: merge
       queries:
       - labels:
         - approved
@@ -42,6 +44,7 @@ data:
         - btukov/Jenkinsx_Demo
         - btukov/Jx_Pipeline
         - btukov/Jx_Pipeline2
+        - btukov/Jx_Tukov
         - btukov/Jx
       - labels:
         - updatebot
@@ -56,6 +59,7 @@ data:
         - btukov/Jenkinsx_Demo
         - btukov/Jx_Pipeline
         - btukov/Jx_Pipeline2
+        - btukov/Jx_Tukov
         - btukov/Jx
       target_url: http://lighthouse-jx.192.168.90.82.nip.io/merge/status
 kind: ConfigMap
